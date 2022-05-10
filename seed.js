@@ -53,7 +53,7 @@ const prisma = new PrismaClient();
         lang: 'Spanish',
         missionCommander: 'carlogilmar',
         enrollments: 2,
-        mission: 'Java'
+        hasCertification: false
       },
     });
 
@@ -65,7 +65,7 @@ const prisma = new PrismaClient();
         lang: 'Spanish',
         missionCommander: 'ferochoa',
         enrollments: 3,
-        mission: 'Python'
+        hasCertification: true
       },
     });
 
@@ -77,11 +77,11 @@ const prisma = new PrismaClient();
         lang: 'Japanese',
         missionCommander: 'Kenji Nakamura',
         enrollments: 23,
-        mission: 'C'
+        hasCertification: false
       },
     });
 
-
+  console.log('Create 3 missions');
 
   } catch(e) {
     console.error(e);
